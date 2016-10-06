@@ -20,7 +20,7 @@ p    {color: red;}
 #vids .vid-widget video {
 	position: absolute;
     top: 0;
-	height: 1080px;
+	height: 700px;
 }
 
 /* REPRODUCING VIDEO */
@@ -37,86 +37,86 @@ p    {color: red;}
 .vid-widget#choza div.static-image,
 .vid-widget#choza video {
     left: 0;
-    width: 700px;
+    width: 618px;
 }
 
 .vid-widget#llama div.static-image,
 .vid-widget#llama video {
-    left: 592px;
-    width: 800px;
+    left: 523px;
+    width: 706px;
 }
 
 .vid-widget#piedras div.static-image,
 .vid-widget#piedras video {
-    left: 1231px;
-    width: 500px;
+    left: 1087px;
+    width: 441px;
 }
 
 .vid-widget#quipus div.static-image,
 .vid-widget#quipus video {
-    left: 1555px;
-    width: 600px;
+    left: 1373px;
+    width: 530px;
 }
 
 .vid-widget#aretes div.static-image,
 .vid-widget#aretes video {
-    left: 2159px;
-    width: 700px;
+    left: 1906px;
+    width: 617px;
 }
 
 .vid-widget#chunho div.static-image,
 .vid-widget#chunho video {
-    left: 2621px;
-    width: 600px;
+    left: 2314px;
+    width: 530px;
 }
 
 .vid-widget#costales div.static-image,
 .vid-widget#costales video {
-    left: 2966px;
-    width: 1000px;
+    left: 2618px;
+    width: 883px;
 }
 
 .vid-widget#pato div.static-image,
 .vid-widget#pato video {
-    left: 3619px;
-    width: 700px;
+    left: 3195px;
+    width: 618px;
 }
 
 .vid-widget#tintero div.static-image,
 .vid-widget#tintero video  {
-    left: 4319px;
-    width: 500px;
+    left: 3813px;
+    width: 441px;
 }
 
 .vid-widget#herradura div.static-image,
 .vid-widget#herradura video  {
-    left: 4705px;
-    width: 700px;
+    left: 4154px;
+    width: 618px;
 }
 
 .vid-widget#monedas div.static-image,
-.vid-widget#monedas video  { /* RECLAMAR, NO ESTABA EN EL DRIVE :S */
-    left: 4993px;
-    width: 700px;
+.vid-widget#monedas video  {
+    left: 4408px;
+    width: 618px;
 }
 
 .vid-widget#rieles div.static-image,
 .vid-widget#rieles video  {
-    left: 4895px;
-    width: 1000px;
+    left: 4322px;
+    width: 883px;
 }
 
 .vid-widget#parabolicas div.static-image,
 .vid-widget#parabolicas video  {
     left: 0px;
-    width: 6479px;
+    width: 5720px;
 }
 
 .vid-widget#nubes div.static-image,
-.vid-widget#nubes video  { /* cambiar */
+.vid-widget#nubes video  {
     left: 0px;
     top: -400px;
-    width: 6479px;
+    width: 5720px;
 }
 
 
@@ -137,10 +137,11 @@ p    {color: red;}
 
 .calca {
     background-image: url("calca.png");
-    width: 4199px;
+    width: 5720px;
     height: 700px;
-    background-size: 4199px 700px;
+    background-size: 5720px 700px;
     background-color: red;
+    background-repeat:no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -148,5 +149,5 @@ p    {color: red;}
 
 
 #fake_buttons{
-	margin:1080px 0 0 0;
+	margin:703px 0 0 0;
 }
