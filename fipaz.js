@@ -47,6 +47,7 @@ window.onload = function () {
 
 		if(tags[i]=="nubes"){
 			tagVideo.setAttribute("autoplay","");
+			tagVideo.setAttribute("loop","");
 		} else {
 			tagVideo.addEventListener('ended',function(e){
 				this.parentNode.classList.remove("play");

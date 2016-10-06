@@ -21,6 +21,7 @@ p    {color: red;}
 	position: absolute;
     top: 0;
 	height: 700px;
+    z-index: 1000;
 }
 
 /* REPRODUCING VIDEO */
@@ -106,8 +107,8 @@ p    {color: red;}
     width: 883px;
 }
 
-.vid-widget#parabolicas div.static-image,
-.vid-widget#parabolicas video  {
+.vid-widget#parabolica div.static-image,
+.vid-widget#parabolica video  {
     left: 0px;
     width: 5720px;
 }
@@ -115,8 +116,9 @@ p    {color: red;}
 .vid-widget#nubes div.static-image,
 .vid-widget#nubes video  {
     left: 0px;
-    top: -400px;
+    top: -200px;
     width: 5720px;
+    z-index: 10;
 }
 
 
