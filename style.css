@@ -135,6 +135,13 @@ p    {color: red;}
 
 .btn:hover{background-color: red;}
 
+.calca {
+    background-image:url("calca.png");
+    width: 4199px;
+    height:700px;
+    background-size: 4199px 700px;
+}
+
 
 #fake_buttons{
 	margin:1080px 0 0 0;
