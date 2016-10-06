@@ -130,6 +130,7 @@ p    {color: red;}
     color: white;
     cursor: pointer;
     display: inline;
+    display: none;
 }
 
 .btn:hover{background-color: red;}

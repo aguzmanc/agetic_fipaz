@@ -1,5 +1,21 @@
-var ARDUINO_URL = "file:///Users/arn/Projects/AGETIC%20FIPAZ/fake_status.json";
+var ARDUINO_URL = "https://aguzmanc.github.io/agetic_fipaz/fake_status.json";
 var buttonStatus = {};
+
+var fakeStatus = {
+	"choza": false,
+	"llama": false,
+	"piedras": false,
+	"quipus": false,
+	"aretes": false,
+	"chunho": false,
+	"costales": false,
+	"pato": false,
+	"tintero": false,
+	"herradura": false,
+	"monedas": false,
+	"rieles": false,
+	"parabolica": false
+};
 
 window.onload = function () {
 	var tags = [ // all the videos
@@ -52,6 +68,7 @@ function ClickFakeArduino(sender, parm)
 {
 	fakeStatus[parm] = true;
 
+	setTimeout(function(){fakeStatus[parm]=false;}, 500);
 }
 
 var requesting = false;
@@ -65,12 +82,12 @@ function UpdateArduinoStatus()
 	req.onreadystatechange = function(){
 		if(req.readyState === XMLHttpRequest.DONE){
 			if(req.status === 200) {
-				buttonStatus = JSON.parse(req.responseText);
+				buttonStatus = JSON.parse(req.responseText); // fakeStatus;
 				console.log(buttonStatus);
 				requesting = false;
 
-				for(var key in status) {
-					if(status[key]===true) {
+				for(var key in buttonStatus) {
+					if(buttonStatus[key]===true) {
 						var video = document.querySelectorAll("#vids .vid-widget#"+key)[0];
 						video.classList.add("play");
 						video.querySelector("video").play(); // reproduce		
