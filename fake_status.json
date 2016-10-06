@@ -3,7 +3,7 @@
 	"llama": true,
 	"piedras": false,
 	"quipus": false,
-	"aretes": false,
+	"aretes": true,
 	"chunho": false,
 	"costales": false,
 	"pato": false,
