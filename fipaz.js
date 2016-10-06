@@ -66,9 +66,11 @@ window.onload = function () {
 
 function ClickFakeArduino(sender, parm)
 {
-	fakeStatus[parm] = true;
-
-	setTimeout(function(){fakeStatus[parm]=false;}, 500);
+	// fakeStatus[parm] = true;
+	// setTimeout(function(){fakeStatus[parm]=false;}, 500);
+	var video = document.querySelectorAll("#vids .vid-widget#"+parm)[0];
+	video.classList.add("play");
+	video.querySelector("video").play(); // reproduce		
 }
 
 var requesting = false;
@@ -82,7 +84,7 @@ function UpdateArduinoStatus()
 	req.onreadystatechange = function(){
 		if(req.readyState === XMLHttpRequest.DONE){
 			if(req.status === 200) {
-				buttonStatus = JSON.parse(req.responseText); // fakeStatus;
+				buttonStatus = JSON.parse(req.responseText); 
 				console.log(buttonStatus);
 				requesting = false;
 
