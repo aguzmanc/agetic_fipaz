@@ -1,6 +1,6 @@
 {
 	"choza": false,
-	"llama": false,
+	"llama": true,
 	"piedras": false,
 	"quipus": false,
 	"aretes": false,
