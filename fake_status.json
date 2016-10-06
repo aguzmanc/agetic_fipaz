@@ -1,9 +1,9 @@
 {
 	"choza": false,
-	"llama": true,
+	"llama": false,
 	"piedras": false,
 	"quipus": false,
-	"aretes": true,
+	"aretes": false,
 	"chunho": false,
 	"costales": false,
 	"pato": true,
