@@ -1,0 +1,140 @@
+body {
+	background-color: powderblue;
+}
+
+h1   {color: blue;}
+p    {color: red;}
+
+/* TEMPORAL BACKGROUND */
+.bg {
+    position: absolute;
+    width: 6479px;
+    height: 1080px;
+    background-image: url('fondo.png');
+    background-repeat: no-repeat;
+}
+
+
+/* GENERIC VIDEO SETUP */
+#vids .vid-widget div.static-image,
+#vids .vid-widget video {
+	position: absolute;
+    top: 0;
+	height: 1080px;
+}
+
+/* REPRODUCING VIDEO */
+#vids .vid-widget.play div.static-image { display: none;}
+#vids .vid-widget.play video {display: block}
+
+/*NOT REPRODUCING VIDEO*/
+#vids .vid-widget div.static-image { display: block;}
+#vids .vid-widget video {display: none}
+
+
+
+/* VIDEO CONFIG POSITION */
+.vid-widget#choza div.static-image,
+.vid-widget#choza video {
+    left: 0;
+    width: 700px;
+}
+
+.vid-widget#llama div.static-image,
+.vid-widget#llama video {
+    left: 592px;
+    width: 800px;
+}
+
+.vid-widget#piedras div.static-image,
+.vid-widget#piedras video {
+    left: 1231px;
+    width: 500px;
+}
+
+.vid-widget#quipus div.static-image,
+.vid-widget#quipus video {
+    left: 1555px;
+    width: 600px;
+}
+
+.vid-widget#aretes div.static-image,
+.vid-widget#aretes video {
+    left: 2159px;
+    width: 700px;
+}
+
+.vid-widget#chunho div.static-image,
+.vid-widget#chunho video {
+    left: 2621px;
+    width: 600px;
+}
+
+.vid-widget#costales div.static-image,
+.vid-widget#costales video {
+    left: 2966px;
+    width: 1000px;
+}
+
+.vid-widget#pato div.static-image,
+.vid-widget#pato video {
+    left: 3619px;
+    width: 700px;
+}
+
+.vid-widget#tintero div.static-image,
+.vid-widget#tintero video  {
+    left: 4319px;
+    width: 500px;
+}
+
+.vid-widget#herradura div.static-image,
+.vid-widget#herradura video  {
+    left: 4705px;
+    width: 700px;
+}
+
+.vid-widget#monedas div.static-image,
+.vid-widget#monedas video  { /* RECLAMAR, NO ESTABA EN EL DRIVE :S */
+    left: 4993px;
+    width: 700px;
+}
+
+.vid-widget#rieles div.static-image,
+.vid-widget#rieles video  {
+    left: 4895px;
+    width: 1000px;
+}
+
+.vid-widget#parabolicas div.static-image,
+.vid-widget#parabolicas video  {
+    left: 0px;
+    width: 6479px;
+}
+
+.vid-widget#nubes div.static-image,
+.vid-widget#nubes video  { /* cambiar */
+    left: 0px;
+    top: -400px;
+    width: 6479px;
+}
+
+
+/* DUMMY STUFF SIMULATED */
+.btn {
+	height: 200px;
+    width: 300px;
+    background-color: blue;
+    font-size: 100px;
+    padding: 50px;
+    color: white;
+    cursor: pointer;
+    display: inline;
+}
+
+.btn:hover{background-color: red;}
+
+
+#fake_buttons{
+	margin:1080px 0 0 0;
+}
