@@ -1,9 +1,27 @@
+@font-face {
+    font-family: "Liberation";
+    src: url('lib.ttf');
+}
+
 body {
 	background-color: powderblue;
 }
 
 h1   {color: blue;}
 p    {color: red;}
+
+h2 {    
+    font-family: "Liberation";
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    z-index: 2000;
+    text-align: center;
+}
+
+h2.left {left: 250px;}
+
+h2.right {}
 
 /* TEMPORAL BACKGROUND */
 .bg {
