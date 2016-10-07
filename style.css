@@ -19,7 +19,7 @@ p    {color: red;}
 #vids .vid-widget div.static-image,
 #vids .vid-widget video {
 	position: absolute;
-    top: 0;
+    top: 100px;
 	height: 700px;
     z-index: 1000;
 }
@@ -117,7 +117,7 @@ p    {color: red;}
 .vid-widget#nubes video  {
     left: 0px;
     top: -200px;
-    width: 5720px;
+    width: 1720px;
     z-index: 10;
 }
 
@@ -151,5 +151,5 @@ p    {color: red;}
 
 
 #fake_buttons{
-	margin:703px 0 0 0;
+	margin:803px 0 0 0;
 }

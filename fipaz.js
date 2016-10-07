@@ -47,7 +47,12 @@ window.onload = function () {
 
 		if(tags[i]=="nubes"){
 			tagVideo.setAttribute("autoplay","");
-			tagVideo.setAttribute("loop","");
+			//tagVideo.setAttribute("loop","");
+			tagVideo.addEventListener('ended',function(e){
+				this.style.left = ((Math.random()*3000) + 1000) + "px";
+				fakeStatus[this.parentNode.id] = false;
+				this.play();
+			},false);	
 		} else {
 			tagVideo.addEventListener('ended',function(e){
 				this.parentNode.classList.remove("play");
@@ -86,7 +91,6 @@ function UpdateArduinoStatus()
 		if(req.readyState === XMLHttpRequest.DONE){
 			if(req.status === 200) {
 				buttonStatus = JSON.parse(req.responseText); 
-				console.log(buttonStatus);
 				requesting = false;
 
 				for(var key in buttonStatus) {
